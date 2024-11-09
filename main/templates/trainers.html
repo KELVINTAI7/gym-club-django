@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Our Trainers{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center my-4">Meet Our Trainers</h1>
+        <p class="text-center mb-4">Our certified trainers are here to help you achieve your fitness goals. With experience and passion, they provide guidance and motivation every step of the way.</p>
+        
+        <!-- Row for trainers -->
+        <div class="row text-center">
+            
+            <!-- Trainer 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/alex.jpg' %}" alt="Alex Johnson" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Alex Johnson</h5>
+                        <p class="card-text">Specializes in strength training and bodybuilding.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trainer 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/sara.jpg' %}" alt="Sara Lee" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Sara Lee</h5>
+                        <p class="card-text">Yoga and Pilates instructor focused on flexibility and mindfulness.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trainer 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{% static 'images/mike.jpg' %}" alt="Mike Brown" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mike Brown</h5>
+                        <p class="card-text">Cardio and HIIT expert, perfect for those looking to improve endurance.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
